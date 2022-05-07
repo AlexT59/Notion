@@ -1,1 +1,8 @@
-<iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:720px;height:375px;" src="https://www.clocklink.com/clocks/HTML5/html5-world.html?Paris&Colombo&&480&gray"></iframe>
+<head>
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
+</head>
+<iframe scrolling="no" frameborder="no" clocktype="html5" onload="resizeIframe(this)" src="https://www.clocklink.com/clocks/HTML5/html5-world.html?Paris&Colombo&&480&gray"></iframe>
